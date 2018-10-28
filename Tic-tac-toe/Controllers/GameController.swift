@@ -29,6 +29,13 @@ class ViewController: UIViewController, TicTacToeView {
             showAlert("Player \(winner) has won")
             
         }
+        else {
+            
+            let emptyCells = game.gameState.filter{$0 == 0}
+            if emptyCells.count == 0 {
+                showAlert("Draw!")
+            }
+        }
     }
     
 
@@ -70,6 +77,7 @@ class ViewController: UIViewController, TicTacToeView {
             
             for button in buttonsCollection {
                 button.setImage(nil, for: [])
+                
             }
         }
     }
