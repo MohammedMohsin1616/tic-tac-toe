@@ -98,6 +98,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonsCollection" destination="P6k-Ai-TZT" collectionClass="NSMutableArray" id="6va-yq-R3Y"/>
+                        <outletCollection property="buttonsCollection" destination="WZc-zT-giX" collectionClass="NSMutableArray" id="u3t-vO-a1q"/>
+                        <outletCollection property="buttonsCollection" destination="L76-Bb-gP1" collectionClass="NSMutableArray" id="b3L-oP-VRj"/>
+                        <outletCollection property="buttonsCollection" destination="sRt-zv-Fjd" collectionClass="NSMutableArray" id="yqD-mN-tZk"/>
+                        <outletCollection property="buttonsCollection" destination="u2D-gV-e3E" collectionClass="NSMutableArray" id="LFP-39-6qn"/>
+                        <outletCollection property="buttonsCollection" destination="ewF-k3-pzG" collectionClass="NSMutableArray" id="QN0-jS-Up8"/>
+                        <outletCollection property="buttonsCollection" destination="yZU-J6-oRg" collectionClass="NSMutableArray" id="Z3i-eW-dpA"/>
+                        <outletCollection property="buttonsCollection" destination="Jyh-En-cCG" collectionClass="NSMutableArray" id="0mk-wx-UbV"/>
+                        <outletCollection property="buttonsCollection" destination="UX6-PW-fNd" collectionClass="NSMutableArray" id="Zdf-wB-PgZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
