@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, TicTacToeView {
     
     let game = Model()
-    var activePlayer = 1
-    var isGameActive = false
+    var activePlayer: Int?
+    var isGameActive: Bool?
     
     @IBOutlet var buttonsCollection: [UIButton]!
     @IBAction func buttonPressed(_ sender: AnyObject) {
@@ -42,6 +42,7 @@ class ViewController: UIViewController, TicTacToeView {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         game.view = self
         game.gameState = [Int] (repeating: 0, count:9)
         activePlayer = 1
@@ -59,7 +60,7 @@ class ViewController: UIViewController, TicTacToeView {
     func updateGameState(object: AnyObject, isActive: Bool) {
         
         if isActive {
-            game.gameState[object.tag - 1] = activePlayer
+            game.gameState[object.tag - 1] = activePlayer!
             
             if(activePlayer == 1) {
                 
@@ -71,7 +72,7 @@ class ViewController: UIViewController, TicTacToeView {
             }
             
             
-            activePlayer = game.togglePlayer(active: activePlayer)
+            activePlayer = game.togglePlayer(active: activePlayer!)
         }
         else {
             
